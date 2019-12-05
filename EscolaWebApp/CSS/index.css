@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.meu-container{
+  width:auto;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+
+  /*flex*/
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+header{
+  background-color: #DAA520;
+  color: black;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  padding-top: 1px;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+main{
+  background-color: white;
+  flex-grow: 1;
+}
+
+body{
+  font-family: verdana, sans-serif;
+}
+
+
+
+footer{
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  background-color: #EEE8AA;
+  text-align: right;
+  padding-right: 1em;
+  padding-top: 0.5em;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario{
+  color: white;
+  background-color: #008B8B;
+  padding: 10px;
+}
+
+.wrapper{
+  padding-bottom: 0;
+}
+
+.forms{
+  background-color: white;
+  padding-left: 0;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  padding-right: 0;
+  padding-bottom: 10px;
+}
+
+p{
+  text-align: justify;
+  font-size: 1em;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.carousel{
+  padding-bottom: 0px;
+}
+
+.card-img{
+  max-width: 200px;
+  max-height: 400px;
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+IMG.displayed2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.col-md-4{
+  padding-top: 20px;
+}
+
+.navbar{
+  display: table;
+}
+
+.collapse{
+  float: left;
+  width: 30%;
+}
+
+.pic{
+  float: right;
+  margin-left: 32%;
+}

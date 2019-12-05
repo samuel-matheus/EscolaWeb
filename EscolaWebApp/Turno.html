@@ -1,0 +1,19 @@
+
+      <form class="formulario" name="formturno" action="http://localhost:5000/turno" method="POST">
+        <div class="form-group">
+         <label for="nome">Turno: </label>
+         <input type="text" class="form-control" name="nome"
+         ng-model="turno.nome" placeholder="Nome" ng-required="true" ng-minlength="1"/>
+
+         <div ng-messages="formturno.nome.$error" ng-if='formturno.nome.$dirty'>
+           <div ng-message="required" class="alert alert-danger">
+             Por favor, preencha o campo nome!
+           </div>
+           <div ng-message="minlength" class="alert alert-info">
+             O campo nome deve ter no mínimo 10 caracteres.
+           </div>
+         </div>
+       </div>
+       <input type= 'reset' name='limpar' value= 'Limpar' class="btn btn-secondary btn-lg btn-block">
+           <button ng-click="cadastrar()" class="btn btn-dark btn-lg btn-block">Cadastrar</button>
+      </form>

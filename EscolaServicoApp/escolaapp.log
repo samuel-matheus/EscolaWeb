@@ -1,0 +1,152 @@
+2019-08-14 14:45:56,175 - INFO - Cadastrando escolas.
+2019-08-14 14:46:16,787 - INFO - Cadastrando escolas.
+2019-08-14 14:49:20,775 - INFO - Cadastrando Turno
+2019-08-14 14:50:45,658 - INFO - Cadastrando um Novo Endereço
+2019-08-14 14:55:33,878 - INFO - Cadastrando Turno
+2019-08-14 14:55:33,910 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-14 14:55:40,664 - INFO - Listando Todos os Turnos
+2019-08-14 14:55:40,665 - ERROR - Aconteceu um erro
+2019-08-14 14:56:25,172 - INFO - Listando Todos os Turnos
+2019-08-14 14:56:25,172 - ERROR - Aconteceu um erro
+2019-08-14 14:57:27,869 - INFO - Listando Todos os Turnos
+2019-08-14 14:57:27,870 - ERROR - Aconteceu um erro
+2019-08-14 14:57:28,504 - INFO - Listando Todos os Turnos
+2019-08-14 14:57:28,504 - ERROR - Aconteceu um erro
+2019-08-14 14:57:28,750 - INFO - Listando Todos os Turnos
+2019-08-14 14:57:28,750 - ERROR - Aconteceu um erro
+2019-08-14 14:57:28,957 - INFO - Listando Todos os Turnos
+2019-08-14 14:57:28,957 - ERROR - Aconteceu um erro
+2019-08-14 14:58:42,447 - INFO - Cadastrando Turno
+2019-08-14 14:58:42,448 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-14 14:59:12,431 - INFO - Listando Todos os Turnos
+2019-08-14 14:59:12,432 - ERROR - Aconteceu um erro
+2019-08-14 15:04:13,471 - INFO - Listando Turnos
+2019-08-14 15:04:13,472 - ERROR - Aconteceu um erro
+2019-08-14 15:04:14,237 - INFO - Listando Turnos
+2019-08-14 15:04:14,237 - ERROR - Aconteceu um erro
+2019-08-15 07:48:06,902 - INFO - Listando Turnos
+2019-08-15 07:48:06,923 - ERROR - Aconteceu um erro
+2019-08-15 07:48:32,674 - INFO - Cadastrando Turno
+2019-08-15 07:48:32,675 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 07:48:51,642 - INFO - Listando turno por ID 
+2019-08-15 07:48:51,643 - ERROR - Aconteceu um erro
+2019-08-15 07:49:02,723 - INFO - Listando Turnos
+2019-08-15 07:49:02,724 - ERROR - Aconteceu um erro
+2019-08-15 07:49:37,906 - INFO - Listando turno por ID 
+2019-08-15 07:49:37,906 - ERROR - Aconteceu um erro
+2019-08-15 07:50:00,253 - INFO - Listando Turnos
+2019-08-15 07:50:00,253 - ERROR - Aconteceu um erro
+2019-08-15 07:50:06,633 - INFO - Listando Turnos
+2019-08-15 07:50:06,634 - ERROR - Aconteceu um erro
+2019-08-15 07:50:51,290 - INFO - Cadastrando Turno
+2019-08-15 07:50:51,290 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 07:56:12,132 - INFO - Cadastrando Turno
+2019-08-15 07:56:12,144 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 07:56:13,343 - INFO - Cadastrando Turno
+2019-08-15 07:56:13,344 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 07:58:21,912 - INFO - Cadastrando Turno
+2019-08-15 07:58:21,913 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 08:00:28,525 - INFO - Cadastrando Turno
+2019-08-15 08:00:28,527 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 08:01:07,814 - INFO - Cadastrando Turno
+2019-08-15 08:01:07,815 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 08:04:08,729 - INFO - Cadastrando Turno
+2019-08-15 08:04:08,730 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 08:09:00,234 - INFO - Cadastrando Turno
+2019-08-15 08:09:00,234 - ERROR - Houve um erro no Cadastro de um Turno
+2019-08-15 08:09:38,179 - INFO - Cadastrando Turno
+2019-08-15 08:09:47,403 - INFO - Listando Turnos
+2019-08-15 13:26:25,634 - INFO - Cadastrando um Novo Endereço
+2019-08-15 13:26:40,265 - INFO - Cadastrando um Novo Endereço
+2019-08-15 13:27:34,669 - INFO - Listando Endereços
+2019-08-15 14:59:49,237 - INFO - Cadastrando um Novo Endereço
+2019-08-15 14:59:56,986 - INFO - Listando Endereços
+2019-08-15 15:02:42,244 - INFO - Aconteceu um erro
+2019-08-15 15:06:27,374 - INFO - Cadastrando um Novo Campus
+2019-08-15 15:06:47,469 - INFO - Listando Todos os Campus
+2019-08-15 15:08:10,109 - INFO - Listando Turnos
+2019-08-15 15:15:28,926 - INFO - Cadastrando escolas.
+2019-08-15 15:16:16,748 - INFO - Listando escolas.
+2019-08-15 15:17:37,802 - INFO - Listando escolas.
+2019-08-15 15:20:10,438 - INFO - Listando Todas as Escolas
+2019-08-15 15:20:57,865 - INFO - Listando escolas.
+2019-08-15 15:28:09,398 - INFO - Cadastrando alunos.
+2019-08-15 15:29:07,510 - INFO - Cadastrando alunos.
+2019-08-15 15:29:19,814 - INFO - Cadastrando alunos.
+2019-08-15 15:29:30,154 - INFO - Listando alunos.
+2019-08-15 15:38:48,067 - INFO - Cadastrando um Novo Endereço
+2019-08-15 15:38:50,746 - INFO - Listando Endereços
+2019-08-15 15:38:55,807 - INFO - Cadastrando um Novo Campus
+2019-08-15 15:39:12,203 - INFO - Cadastrando Turno
+2019-08-15 15:39:15,211 - INFO - Listando Turnos
+2019-08-15 15:39:18,452 - INFO - Cadastrando escolas.
+2019-08-15 15:39:20,877 - INFO - Listando escolas.
+2019-08-15 15:39:24,834 - INFO - Cadastrando alunos.
+2019-08-15 15:39:26,530 - INFO - Listando alunos.
+2019-08-15 15:40:13,064 - INFO - Cadastrando curso
+2019-08-15 15:40:20,423 - INFO - Cadastrando curso
+2019-08-15 15:40:23,078 - INFO - Cadastrando curso
+2019-08-15 15:40:32,366 - INFO - Cadastrando curso
+2019-08-15 15:41:43,508 - INFO - Cadastrando curso
+2019-08-15 15:41:48,161 - INFO - Listando cursos.
+2019-08-15 15:43:21,073 - INFO - Cadastrando Turmas
+2019-08-15 15:44:49,133 - INFO - Cadastrando Turmas
+2019-08-15 15:45:07,866 - INFO - Cadastrando Turmas
+2019-08-15 15:47:15,772 - INFO - Cadastrando Turmas
+2019-08-15 15:47:29,750 - INFO - Cadastrando Turmas
+2019-08-15 15:47:48,153 - INFO - Listando Turma.
+2019-08-15 15:49:23,799 - INFO - Cadastrando Professor
+2019-08-15 15:50:11,156 - INFO - Cadastrando Professor
+2019-08-15 15:51:17,727 - INFO - Cadastrando Professor
+2019-08-15 15:51:23,869 - INFO - Listando Professores
+2019-08-15 15:52:29,992 - INFO - Cadastrando Disciplina
+2019-08-15 15:52:29,993 - ERROR - Aconteceu um erro
+2019-08-15 15:52:33,290 - INFO - Listando disciplinas.
+2019-08-15 15:52:39,638 - INFO - Cadastrando Disciplina
+2019-08-15 15:52:39,639 - ERROR - Aconteceu um erro
+2019-08-15 15:52:46,498 - INFO - Listando Professores
+2019-08-15 15:52:50,780 - INFO - Listando disciplinas.
+2019-08-15 15:52:51,252 - INFO - Listando disciplinas.
+2019-08-15 15:52:51,417 - INFO - Listando disciplinas.
+2019-08-15 15:53:29,875 - INFO - Listando disciplinas.
+2019-08-15 15:53:49,260 - INFO - Listando disciplinas.
+2019-08-15 15:55:22,892 - INFO - Listando disciplinas.
+2019-08-15 15:55:23,736 - INFO - Listando disciplinas.
+2019-08-15 15:55:23,885 - INFO - Listando disciplinas.
+2019-08-15 15:55:25,489 - INFO - Listando disciplinas.
+2019-08-15 15:55:25,823 - INFO - Listando disciplinas.
+2019-08-15 15:55:26,097 - INFO - Listando disciplinas.
+2019-08-15 15:55:26,316 - INFO - Listando disciplinas.
+2019-08-15 15:55:26,465 - INFO - Listando disciplinas.
+2019-08-15 15:55:29,105 - INFO - Cadastrando Disciplina
+2019-08-15 15:55:29,106 - ERROR - Aconteceu um erro
+2019-08-15 15:55:30,625 - INFO - Cadastrando Disciplina
+2019-08-15 15:55:30,625 - ERROR - Aconteceu um erro
+2019-08-15 15:55:55,056 - INFO - Listando disciplinas.
+2019-08-15 15:55:56,349 - INFO - Listando disciplinas.
+2019-08-15 15:56:24,069 - INFO - Cadastrando Disciplina
+2019-08-15 15:56:24,070 - ERROR - Aconteceu um erro
+2019-08-15 15:57:47,239 - INFO - Listando Professores
+2019-08-15 15:58:02,088 - INFO - Listando Endereços
+2019-08-15 15:58:14,112 - INFO - Listando disciplinas.
+2019-08-15 15:59:48,593 - INFO - Listando disciplinas.
+2019-08-15 15:59:51,291 - INFO - Cadastrando Disciplina
+2019-08-15 15:59:56,014 - INFO - Listando disciplinas.
+2019-08-16 09:00:32,916 - INFO - Atualizando o endereço
+2019-08-16 09:01:06,285 - INFO - Atualizando o endereço
+2019-08-16 09:04:18,746 - INFO - Listando Endereços
+2019-08-16 09:05:06,410 - INFO - Atualizando o endereço
+2019-08-16 09:05:10,676 - INFO - Listando Endereços
+2019-08-16 09:08:14,183 - INFO - Atualizando campus
+2019-11-01 09:26:21,144 - INFO - Listando alunos.
+2019-11-01 10:12:44,548 - INFO - Listando alunos.
+2019-11-01 10:12:45,665 - INFO - Listando alunos.
+2019-11-01 10:12:46,225 - INFO - Listando alunos.
+2019-11-08 08:55:08,530 - INFO - Cadastrando alunos.
+2019-11-08 09:07:38,128 - INFO - Cadastrando um Novo Campus
+2019-11-08 09:25:49,822 - INFO - Cadastrando um Novo Campus
+2019-11-08 10:05:40,334 - INFO - Cadastrando alunos.
+2019-11-08 10:10:02,105 - INFO - Cadastrando alunos.
+2019-11-08 10:24:30,809 - INFO - Cadastrando alunos.
+2019-11-28 11:19:48,608 - INFO - Cadastrando alunos.
+2019-11-28 11:21:58,786 - INFO - Cadastrando alunos.

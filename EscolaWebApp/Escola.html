@@ -1,0 +1,38 @@
+
+      <form class="formulario" name="formescola" action="http://localhost:5000/escola" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome da Escola: </label>
+          <input type="text" class="form-control" name="nome"
+          ng-model="escola.nome" placeholder="Nome" ng-required="true" />
+
+          <div ng-messages="formescola.nome.$error" ng-if='formescola.nome.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo nome!
+      			</div>
+      		</div>
+        </div>
+        <div class="form-group">
+          <label for="id_endereco">Endereço: </label>
+          <input type="text" class="form-control" name="id_endereco"
+          ng-model="escola.id_endereco" placeholder="Id endereço" ng-required="true">
+
+          <div ng-messages="formescola.id_endereco.$error" ng-if='formescola.id_endereco.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo ID endereço!
+      			</div>
+      		</div>
+        </div>
+        <div class="form-group">
+          <label for="id_campus">Campus: </label>
+          <input type="text" class="form-control" name="id_campus"
+          ng-model="escola.id_campus" placeholder="Id campus" ng-required="true" ng-minlength="1">
+
+          <div ng-messages="formescola.id_campus.$error" ng-if='formescola.id_campus.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo ID campus!
+      			</div>
+      		</div>
+        </div>
+        <input type= 'reset' name='limpar' value= 'Limpar' class="btn btn-secondary btn-lg btn-block">
+            <button ng-click="cadastrar()" class="btn btn-dark btn-lg btn-block">Cadastrar</button>
+      </form>

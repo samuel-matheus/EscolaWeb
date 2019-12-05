@@ -1,0 +1,28 @@
+      <form name="formcampus" class="formulario" action="http://localhost:5000/campus" method="POST">
+        <div class="form-group">
+          <label for="sigla">Sigla: </label>
+          <input type="text" class="form-control" name="sigla"
+          ng-model="campus.sigla" placeholder="Sigla" ng-required="true" ng-minlength="1" >
+
+          <div ng-messages="formcampus.sigla.$error" ng-if='formcampus.sigla.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo sigla!
+      			</div>
+
+      		</div>
+        </div>
+        <div class="form-group">
+          <label for="cidade">Cidade: </label>
+          <input type="text" class="form-control" name="cidade"
+          ng-model="campus.cidade" placeholder="Cidade" ng-required="true" ng-minlength="5">
+
+          <div ng-messages="formcampus.cidade.$error" ng-if='formcampus.cidade.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo cidade!
+      			</div>
+
+      		</div>
+        </div>
+        <input type= 'reset' name='limpar' value= 'Limpar' class="btn btn-secondary btn-lg btn-block">
+            <button ng-click="cadastrar()" class="btn btn-dark btn-lg btn-block">Cadastrar</button>
+      </form>

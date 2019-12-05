@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang=pt-br dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Capítulo 2</title>
+  </head>
+  <body>
+    <h1>Capítulo 2: Variáveis, expressões e
+instruções</h1>
+      <p>Um dos recursos mais eficientes de uma linguagem de programação é a capacidade de
+manipular variáveis. Uma variável é um nome que se refere a um valor.</p>
+
+    <h2>2.1 - Instruções de atribuição</h2>
+      <p>Uma instrução de atribuição cria uma nova variável e dá um valor a ela:</p>
+      <code>
+        >>> message = <font color="lightBlue">'And now for something completely different'<br></font>
+        >>> n = <font color="lightGreen">17</font><br>
+        >>> pi = <font color="lightGreen">3.141592653589793</font>
+      </code>
+      <p>Esse exemplo faz três atribuições. A primeira atribui uma string a uma nova variável
+chamada message; a segunda dá o número inteiro 17 a n; a terceira atribui o valor
+(aproximado) de π a pi.</p>
+      <p>Uma forma comum de representar variáveis por escrito é colocar o nome com uma flecha
+apontando para o seu valor. Este tipo de número é chamado de diagrama de estado porque
+mostra o estado no qual cada uma das variáveis está (pense nele como o estado de espírito
+da variável). A Figura 2.1 mostra o resultado do exemplo anterior.</p>
+<img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0201.png" alt="Figura 2.1 – Diagrama de estado."><br>
+<i>Figura2.1 - Diagrama de estado</i>
+    <h2>2.2 - Nomes de variáveis</h2>
+    <p>Os programadores geralmente escolhem nomes significativos para as suas variáveis – eles
+documentam o uso da variável.</p>
+    <p>Nomes de variáveis podem ser tão longos quanto você queira. Podem conter tanto letras
+como números, mas não podem começar com um número. É legal usar letras maiúsculas,
+mas a convenção é usar apenas letras minúsculas para nomes de variáveis.</p>
+    <p>O caractere de sublinhar (_) pode aparecer em um nome. Muitas vezes é usado em nomes
+com várias palavras, como your_name ou airspeed_of_unladen_swallow.</p>
+    <p>Se você der um nome ilegal a uma variável, recebe um erro de sintaxe:</p>
+    <code>>>>
+76trombones = 'big parade'<br>
+SyntaxError: invalid syntax<br>
+>>> more@ = 1000000<br>
+SyntaxError: invalid syntax<br>
+>>> class = 'Advanced Theoretical Zymurgy'<br>
+SyntaxError: invalid syntax
+</code>
+    <p>76trombones é ilegal porque começa com um número. more@ é ilegal porque contém um
+caractere ilegal, o @. Mas o que há de errado com class?</p>
+    <p>A questão é que class é uma das palavras-chave do Python. O interpretador usa palavras-
+chave para reconhecer a estrutura do programa e elas não podem ser usadas como nomes
+de variável.</p>
+    <p>O Python 3 tem estas palavras-chave:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>and         del         from        None        True
+as          elif        global      nonlocal    try
+assert      else        if          not         while
+break       except      import      or          with
+class       False       in          pass        yield
+continue    finally     is          raise
+def         for         lambda      return
+</code></pre></div></div>
+
+    <p>Você não precisa memorizar essa lista. Na maior parte dos ambientes de desenvolvimento,
+as palavras-chave são exibidas em uma cor diferente; se você tentar usar uma como nome
+de variável, vai perceber.</p>
+
+
+    <h2>2.3 - Expressões e instruções</h2>
+      <p>Uma expressão é uma combinação de valores, variáveis e operadores. Um valor por si
+mesmo é considerado uma expressão, assim como uma variável, portanto as expressões
+seguintes são todas legais:</p>
+      <code>
+>>> <font color="lightGreen">42<br></font>
+<font color="lightGreen">42<br></font>
+>>> n<br>
+<font color="lightGreen">17<br></font>
+>>> n + <font color="lightGreen">25<br></font>
+<font color="lightGreen">42</font>
+      </code>
+      <p>Quando você digita uma expressão no prompt, o interpretador a avalia, ou seja, ele
+encontra o valor da expressão. Neste exemplo, o n tem o valor 17 e n + 25 tem o valor 42.</p>
+      <p>Uma instrução é uma unidade de código que tem um efeito, como criar uma variável ou
+exibir um valor.</p>
+      <code>
+>>> n = <font color="lightGreen">17<br></font>
+>>> <font color="DarkRed">print</font>(n)</code>
+      <p>A primeira linha é uma instrução de atribuição que dá um valor a n. A segunda linha é uma
+instrução de exibição que exibe o valor de n.</p>
+      <p>Quando você digita uma instrução, o interpretador a executa, o que significa que ele faz o
+que a instrução diz. Em geral, instruções não têm valores.</p>
+
+    <h2>2.4 - Modo script</h2>
+    <p>Até agora executamos o Python no modo interativo, no qual você interage diretamente
+com o interpretador. O modo interativo é uma boa forma de começar, mas se estiver
+trabalhando com mais do que algumas linhas do código, o processo pode ficar
+desorganizado.</p>
+    <p>A alternativa é salvar o código em um arquivo chamado script e então executar o
+interpretador no modo script para executá-lo. Por convenção, os scripts no Python têm
+nomes que terminam com .py.</p>
+    <p>Se souber como criar e executar um script no seu computador, você está pronto. Senão,
+recomendo usar o PythonAnywhere novamente. Inseri instruções sobre como executar
+programas no modo script em http://tinyurl.com/thinkpython2e.</p>
+    <p>Como o Python oferece os dois modos, você pode testar pedaços do código no modo
+interativo antes de colocá-los em um script. Mas há diferenças entre o modo interativo e o
+modo script que podem confundir as pessoas.</p>
+    <p>Por exemplo, se estiver usando o Python como uma calculadora, você poderia digitar:</p>
+    <code>
+>>> miles = <font color="lightGreen">26.2</font><br>
+>>> miles * <font color="lightGreen">1.61</font><br>
+42.182
+    </code>
+    <p>A primeira linha atribui um valor a miles, mas não tem efeito visível. A segunda linha é
+uma expressão, então o interpretador a avalia e exibe o resultado. No fim, chega-se ao
+resultado de que uma maratona tem aproximadamente 42 quilômetros.</p>
+    <p>Mas se você digitar o mesmo código em um script e executá-lo, não recebe nenhuma
+saída. Uma expressão, por conta própria, não tem efeito visível no modo script. O Python,
+na verdade, avalia a expressão, mas não exibe o valor a menos que você especifique:</p>
+    <code>
+miles = <font color="lightGreen">26.2</font><br>
+<font color="DarkRed">print</font>(miles * <font color="lightGreen">1.61</font>)<br>
+    </code>
+    <p>Este comportamento pode confundir um pouco no início.</p>
+    <p>Um script normalmente contém uma sequência de instruções. Se houver mais de uma
+instrução, os resultados aparecem um após o outro, conforme as instruções sejam
+executadas.</p>
+    <p>Por exemplo, o script</p>
+    <code>
+<font color="DarkRed">print</font>(<font color="lightGreen">1</font>)<br>
+x = <font color="lightGreen">2</font><br>
+<font color="DarkRed">print</font>(x)<br></code>
+    <p>produz a saída</p>
+    <code>
+<font color="lightGreen">1</font><br>
+<font color="lightGreen">2</font>
+    </code>
+    <p>A instrução de atribuição não produz nenhuma saída.</p>
+    <p>Para verificar sua compreensão, digite as seguintes instruções no interpretador do Python e
+veja o que fazem:</p>
+    <code>
+<font color="lightGreen">5</font><br>
+x = <font color="lightGreen">5</font><br>
+x + <font color="lightGreen">1</font>
+    </code>
+    <p>Agora ponha as mesmas instruções em um script e o execute. Qual é a saída? Altere o
+script transformando cada expressão em uma instrução de exibição e então o execute
+novamente.</p>
+    <h2>2.5 - Ordens das operações</h2>
+    <p>Quando uma expressão contém mais de um operador, a ordem da avaliação depende da
+ordem das operações. Para operadores matemáticos, o Python segue a convenção
+matemática. O acrônimo PEMDAS pode ser útil para lembrar das regras:</p>
+    <p><ul> &#149; Os Parênteses têm a precedência mais alta e podem ser usados para forçar a avaliação
+de uma expressão na ordem que você quiser. Como as expressões em parênteses são
+avaliadas primeiro, 2 * (3-1) é 4, e (1+1)**(5-2) é 8. Também é possível usar
+parênteses para facilitar a leitura de uma expressão, como no caso de (minute *
+100) / 60, mesmo se o resultado não for alterado.</p>
+    <p>&#149;A Exponenciação tem a próxima precedência mais alta, então 1 + 2**3 é 9, não 27, e
+2 * 3**2 é 18, não 36.</p>
+    <p>&#149;A Multiplicação e a Divisão têm precedência mais alta que a Adição e a Subtração.
+Assim, 2 * 3 - 1 é 5, não 4, e 6 + 4 / 2 é 8, não 5.</p>
+    <p>&#149;Os operadores com a mesma precedência são avaliados da esquerda para a direita
+(exceto na exponenciação). Assim, na expressão degrees / 2 * pi, a divisão
+acontece primeiro e o resultado é multiplicado por pi. Para dividir por 2π, você pode
+usar parênteses ou escrever degrees / 2 / pi.</p>
+    </ul>
+      <p>Eu não fico sempre tentando lembrar da precedência de operadores. Se a expressão não
+estiver clara à primeira vista, uso parênteses para fazer isso.</p>
+    <h2>2.6 - Operações com strings</h2>
+    <p>Em geral, não é possível executar operações matemáticas com strings, mesmo se elas
+parecerem números, então coisas assim são ilegais:</p>
+    <code>'2'-'1'&nbsp;&nbsp;&nbsp;'eggs'/'easy'&nbsp;&nbsp;&nbsp;'third'*'a charm' </code>
+    <p>O operador + executa uma concatenação de stringes, ou seja, une as strings pelas extremidades. Por exemplo:</p>
+    <code>
+>>> first = <font color="LightBlue">'throat'</font><br>
+>>> second = <font color="LightBlue">'warbler'</font><br>
+>>> first + second<br>
+throatwarbler
+    </code>
+    <p>O operador * também funciona em strings; ele executa a repetição. Por exemplo,
+‘Spam’*3 é ‘SpamSpamSpam’. Se um dos valores for uma string, o outro tem de ser um
+número inteiro.</p>
+    <p>Este uso de + e * faz sentido por analogia com a adição e a multiplicação. Tal como 4 * 3
+é equivalente a 4 + 4 + 4, esperamos que 'Spam' * 3 seja o mesmo que
+‘Spam’+‘Spam’+‘Spam’, e assim é. Por outro lado, há uma diferença significativa entre a
+concatenação de strings e a repetição em relação à adição e à multiplicação de números
+inteiros. Você consegue pensar em uma propriedade que a adição tem, mas a concatenação
+de strings não tem?</p>
+    <h2>2.7 - Comentários</h2>
+    <p>Conforme os programas ficam maiores e mais complicados, eles são mais difíceis de ler.
+As linguagens formais são densas e muitas vezes é difícil ver um pedaço de código e
+compreender o que ele faz ou por que faz isso.</p>
+    <p>Por essa razão, é uma boa ideia acrescentar notas aos seus programas para explicar em
+linguagem natural o que o programa está fazendo. Essas notas são chamadas de
+comentários, e começam com o símbolo #:</p>
+    <code>
+      <i><font color="lightBlue"># computa a percentagem da hora que passou</i></font><br>
+      percentage = (minute * <font color="lightGreen">100</font>) / <font color="lightGreen">60</font>
+    </code>
+    <p>Nesse caso, o comentário aparece sozinho em uma linha. Você também pode pôr
+comentários no fim das linhas:</p>
+    <code>
+      percentage = (minute * 100) / 60 <i><font color="LightBlue"># percentagem de uma hora</font></i>
+    </code>
+    <p>Tudo do # ao fim da linha é ignorado – não tem efeito na execução do programa.</p>
+    <p>Os comentários tornam-se mais úteis quando documentam algo no código que não está
+óbvio. Podemos supor que o leitor compreenda o que o código faz; assim, é mais útil
+explicar porque faz o que faz.</p>
+    <p>Este comentário é redundante em relação ao código, além de inútil:</p>
+    <code>
+      v = 5 <i><font color="lightBlue"># atribui 5 a v</i></font>
+    </code>
+    <p>Este comentário contém informações úteis que não estão no código:</p>
+    <code>v = 5 <i><font color="lightBlue"># velocidade em metros/segundo.</i></font></code>
+    <p>Bons nomes de variáveis podem reduzir a necessidade de comentários, mas nomes longos
+podem tornar expressões complexas difíceis de ler, então é preciso analisar o que vale
+mais a pena.</p>
+    <h2>2.8 - Depuração</h2>
+    <p>Há três tipos de erros que podem ocorrer em um programa: erros de sintaxe, erros de
+tempo de execução e erros semânticos. É útil distinguir entre eles para rastreá-los mais
+rapidamente.</p>
+    <p>Erro de sintaxe</p>
+    <p><ul>A “sintaxe” refere-se à estrutura de um programa e suas respectivas regras. Por
+exemplo, os parênteses devem vir em pares correspondentes, então (1 + 2) é legal,
+mas 8) é um erro de sintaxe.<br>
+Se houver um erro de sintaxe em algum lugar no seu programa, o Python exibe uma
+mensagem de erro e para, e não será possível executar o programa. Nas primeiras
+poucas semanas da sua carreira em programação, você pode passar muito tempo
+rastreando erros de sintaxe. Ao adquirir experiência, você fará menos erros e os
+encontrará mais rápido.</p></ul>
+    <p>Erro de tempo de execução</p>
+    <p><ul>O segundo tipo de erro é o erro de tempo de execução, assim chamado porque o erro
+não aparece até que o programa seja executado. Esses erros também se chamam de
+exceções porque normalmente indicam que algo excepcional (e ruim) aconteceu.<br>
+Os erros de tempo de execução são raros nos programas simples que veremos nos
+primeiros capítulos, então pode demorar um pouco até você encontrar algum.</p></ul>
+    <p>Erro semântico</p>
+    <p>O terceiro tipo do erro é “semântico”, ou seja, relacionado ao significado. Se houver
+um erro semântico no seu programa, ele será executado sem gerar mensagens de erro,
+mas não vai fazer a coisa certa. Vai fazer algo diferente. Especificamente, vai fazer o
+que você disser para fazer.<br>
+Identificar erros semânticos pode ser complicado, porque é preciso trabalhar de trás
+para a frente, vendo a saída do programa e tentando compreender o que ele está
+fazendo.</p>
+    <h2>2.9 - Glossário</h2>
+    <p>
+    <a href="#termo:a">variável</a><br>
+      <ul>Um nome que se refere a um valor.<br></ul>
+    <a href="#termo:a">atribuição</a><br>
+      <ul>Uma instrução que atribui um valor a uma variável.</ul>
+    <a href="#termo:a">diagrama de estado</a><br>
+      <ul>Uma representação gráfica de um grupo de variáveis e os valores a que se referem. </ul>
+    <a href="#termo:a">palavra-chave</a><br>
+    <ul>
+      Uma palavra reservada, usada para analisar um programa; não é possível usar
+palavras-chave como if, def e while como nomes de variáveis.
+    </ul>
+    <a href="#termo:a">operando</a><br>
+    <ul>
+      Um dos valores que um operador produz.
+    </ul>
+    <a href="#termo:a">expressão</a><br>
+    <ul>
+      Uma combinação de variáveis, operadores e valores que representa um resultado
+único.
+    </ul>
+    <a href="#termo:a">avaliar</a><br>
+    <ul>
+      Simplificar uma expressão executando as operações para produzir um valor único.
+    </ul>
+    <a href="#termo:a">instrução</a><br>
+    <ul>
+      Uma seção do código que representa um comando ou ação. Por enquanto, as
+instruções que vimos são instruções de atribuições e de exibição.
+    </ul>
+    <a href="#termo:a">executar</a><br>
+    <ul>
+      Executar uma instrução para fazer o que ela diz.
+    </ul>
+    <a href="#termo:a">modo interativo</a><br>
+    <ul>
+      Um modo de usar o interpretador do Python, digitando o código no prompt.
+    </ul>
+  <a href="#termo:a">modo script</a><br>
+    <ul>
+      Um modo de usar o interpretador do Python para ler código em um script e executá-
+lo.
+    </ul>
+    <a href="#termo:a">script</a><br>
+    <ul>
+      Um programa armazenado em um arquivo.
+    </ul>
+    <a href="#termo:a">ordem das operações</a><br>
+    <ul>
+      As regras que governam a ordem na qual as expressões que envolvem vários
+operadores e operandos são avaliadas.
+    </ul>
+  <a href="#termo:a">concatenar</a><br>
+    <ul>
+      Juntar dois operandos pelas extremidades.
+    </ul>
+    <a href="#termo:a">comentários</a><br>
+    <ul>
+      Informações em um programa destinadas a outros programadores (ou qualquer
+pessoa que leia o texto fonte) que não têm efeito sobre a execução do programa.
+    </ul>
+  <a href="#termo:a">erro de sintaxe</a><br>
+    <ul>
+      Um erro em um programa que torna sua análise impossível (e por isso impossível de
+interpretar).
+    </ul>
+    <a href="#termo:a">exceção</a><br>
+    <ul>
+      Um erro que se descobre quando o programa é executado.
+    </ul>
+    <a href="#termo:a">semântica</a><br>
+    <ul>
+      O significado de um programa.
+    </ul>
+    <a href="#termo:a">erro semântico</a><br>
+    <ul>
+      Um erro que faz com que um programa faça algo diferente do que o programador
+pretendia.
+    </ul></p>
+    <h2>2.10 - Exercícios</h2>
+    <h3>Exercício 2.1</h3>
+    <p>Repetindo o meu conselho do capítulo anterior, sempre que você aprender um recurso
+novo, você deve testá-lo no modo interativo e fazer erros de propósito para ver o que
+acontece.</p>
+    <ul>
+      <p>&#149;Ou x = y = 1?</p>
+      <p>&#149;Em algumas linguagens, cada instrução termina em um ponto e vírgula ;. O que
+acontece se você puser um ponto e vírgula no fim de uma instrução no Python?</p>
+      <p>&#149;E se puser um ponto no fim de uma instrução?</p>
+      <p>&#149;Em notação matemática é possível multiplicar x e y desta forma: xy. O que acontece
+se você tentar fazer o mesmo no Python?</p></ul>
+    <h3>Exercício 2.2</h3>
+    <p>Pratique o uso do interpretador do Python como uma calculadora:</p>
+    <ul>
+      <p>1. O volume de uma esfera com raio r é . Qual é o volume de uma esfera com raio
+5?</p>
+      <p>2. Suponha que o preço de capa de um livro seja R$ 24,95, mas as livrarias recebem um
+desconto de 40%. O transporte custa R$ 3,00 para o primeiro exemplar e 75 centavos
+para cada exemplar adicional. Qual é o custo total de atacado para 60 cópias?</p>
+      <p>3. Se eu sair da minha casa às 6:52 e correr 1 quilômetro a um certo passo (8min15s por
+quilômetro), então 3 quilômetros a um passo mais rápido (7min12s por quilômetro) e
+1 quilômetro no mesmo passo usado em primeiro lugar, que horas chego em casa
+para o café da manhã?</p>
+    </ul>
+  </body>
+</html>

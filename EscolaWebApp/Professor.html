@@ -1,0 +1,29 @@
+
+      <form class="formulario" name ="formprofessor" action="http://localhost:5000/professor" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome do Professor: </label>
+          <input type="text" class="form-control" name="nome"
+          ng-model="professor.nome" placeholder="Nome" ng-required="true"/>
+
+
+          <div ng-messages="formprofessor.nome.$error" ng-if='formprofessor.nome.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo nome!
+      			</div>
+      		</div>
+        </div>
+        <div class="form-group">
+          <label for="id_endereco">Endereço: </label>
+          <input type="text" class="form-control" name="id_endereco"
+          ng-model="professor.id_endereco" placeholder="Id endereço" ng-required="true" ng-minlength="1">
+
+
+          <div ng-messages="formprofessor.id_endereco.$error" ng-if='formprofessor.id_endereco.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo ID endereço!
+      			</div>
+      		</div>
+        </div>
+        <input type= 'reset' name='limpar' value= 'Limpar' class="btn btn-secondary btn-lg btn-block">
+            <button ng-click="cadastrar()" class="btn btn-dark btn-lg btn-block">Cadastrar</button>
+      </form>

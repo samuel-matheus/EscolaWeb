@@ -1,0 +1,73 @@
+
+      <form name"formaluno" class="formulario" action= "http://localhost:5000/aluno" method="POST">
+
+        <div class="form-group">
+        <label for="nome">Nome: </label>
+        <input type="text" class="form-control" name="nome"
+          ng-model="aluno.nome" placeholder="Nome" ng-required="true"/>
+
+          <div ng-messages="formaluno.nome.$error" ng-if='formaluno.nome.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo Nome!
+      			</div>
+      		</div>
+        </div>
+        <div class="form-group">
+        <label for="matricula">Matrícula: </label>
+        <input type="text" class="form-control" name="matricula"
+        ng-model="aluno.matricula" placeholder="Matrícula" ng-required="true"/>
+
+          <div ng-messages="formaluno.matricula.$error" ng-if='formaluno.matricula.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo Matrícula!
+      			</div>
+      		</div>
+        </div>
+        <div class="form-group">
+        <label for="cpf">CPF: </label>
+        <input type="text" class="form-control" name="cpf"
+        ng-model="aluno.cpf" placeholder="Cpf" ng-required="true">
+
+          <div ng-messages="formaluno.cpf.$error" ng-if='formaluno.cpf.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo Cpf!
+      			</div>
+      		</div>
+        </div>
+        <div class="form-group">
+          <label for="nascimento">Nascimento: </label>
+          <input type="text" class="form-control" name="nascimento"
+          ng-model="aluno.nascimento" placeholder="Nascimento" ng-required="true">
+
+          <div ng-messages="formaluno.nascimento.$error" ng-if='formaluno.nascimento.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo Nascimento!
+      			</div>
+      		</div>
+        </div>
+        <div class="form-group">
+          <label for="id_endereco">Endereço: </label>
+          <input type="text" class="form-control" name="id_endereco"
+          ng-model="aluno.id_endereco" placeholder="Id do Endereço" ng-required="true" ng-minlength="1">
+
+          <div ng-messages="formaluno.id_endereco.$error" ng-if='formaluno.id_endereco.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo Id Endereço!
+      			</div>
+      		</div>
+        </div>
+        <div class="form-group">
+          <label for="id_curso">Curso: </label>
+          <input type="text" class="form-control" name="id_curso"
+          ng-model="aluno.id_curso" placeholder="Id do curso" ng-required="true" ng-minlength="1">
+
+
+          <div ng-messages="formaluno.id_curso.$error" ng-if='formaluno.id_curso.$dirty'>
+      			<div ng-message="required" class="alert alert-danger">
+      				Por favor, preencha o campo Id Curso!
+      			</div>
+      		</div>
+        </div>
+        <input type= 'reset' name='limpar' value= 'Limpar' class="btn btn-secondary btn-lg btn-block">
+            <button ng-click="cadastrar()" class="btn btn-dark btn-lg btn-block">Cadastrar</button>
+      </form>

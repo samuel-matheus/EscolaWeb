@@ -1,0 +1,73 @@
+-http://dontpad.com/flask_topicosespeciais
+- PyCharm
+   - Instalação
+       sudo snap install pycharm-community --classic
+
+- Git
+   - Instalação
+       sudo apt update
+       sudo apt install git
+       git --version
+
+   - Comandos básicos0
+       - Criar um novo projeto num repositório
+                       git
+           git clone [url]
+           gedit README.md
+           git init
+           git add README.md
+           git commit -m "first commit"
+           git remote add origin git@github.com:alexpchin/<reponame>.git
+           git push -u origin master
+
+
+   - Guia prático
+       https://rogerdudler.github.io/git-guide/index.pt_BR.html
+.____________________._____________________.
+
+- Diretório dos projetos
+mkdir projetos
+
+- Framework para criar virtalenvs
+sudo apt-get install python-virtualenv
+
+- Criar uma virtualenv
+virtualenv -p python3 flask_env
+
+- Ativar a virtualenv
+source flask_env/bin/activate
+
+- Desativar a virtualenv
+deactivate
+
+- Adicionar o flask nas bibliotecas do Python3
+pip3 install flask
+
+- Adicionar o Schema
+URL de referência: https://pypi.org/project/flask-json-schema/
+
+- Adicionar o CORS
+URL de referência: https://flask-cors.corydolphin.com/en/2.0.1/
+
+# Código 1 -----------------------------
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+   return ("Olá Mundo! Estou aprendendo Flask", 200)
+
+if(__name__ == '__main__'):
+   app.run(host='0.0.0.0', debug=True, use_reloader=True)
+
+
+
+var toast = $mdToast.simple()
+                   .textContent('As assistências sociais cras foram listadas abaixo.')
+                   .position('bottom center')
+                   .action('OK')
+                   .hideDelay(6000)
+                   .toastClass('my-success');
+               $mdToast.show(toast);
+# Código 1 -----------------------------

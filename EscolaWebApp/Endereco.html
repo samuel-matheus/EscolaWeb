@@ -1,0 +1,60 @@
+
+      <form  class="formulario" name="formendereco" action="http://localhost:5000/endereco" method="POST">
+        <div class="form-group">
+          <label for="nome">Logradouro: </label>
+          <input type="text" class="form-control" name="logradouro"
+          ng-model="endereco.logradouro" placeholder="Logradouro" ng-required="true" />
+
+          <div ng-messages="formendereco.logradouro.$error" ng-if='formendereco.logradouro.$dirty'>
+            <div ng-message="required" class="alert alert-danger">
+              Por favor, preencha o campo logradouro!
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="complemento">Complemento: </label>
+          <input type="text" class="form-control" name="complemento"
+          ng-model="endereco.complemento" placeholder="Complemento" ng-required="true">
+
+          <div ng-messages="formendereco.complemento.$error" ng-if='formendereco.complemento.$dirty'>
+            <div ng-message="required" class="alert alert-danger">
+              Por favor, preencha o campo complemento!
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bairro">Bairro: </label>
+          <input type="text" class="form-control" name="bairro"
+          ng-model="endereco.bairro" placeholder="Bairro" ng-required="true">
+
+          <div ng-messages="formendereco.bairro.$error" ng-if='formendereco.bairro.$dirty'>
+            <div ng-message="required" class="alert alert-danger">
+              Por favor, preencha o campo bairro!
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cep">Cep: </label>
+          <input type="text" class="form-control" name="cep"
+          ng-model="endereco.cep" placeholder="Cep" ng-required="true" ng-minlength="1">
+
+          <div ng-messages="enderecoform.cep.$error" ng-if='enderecoform.cep.$dirty'>
+            <div ng-message="required" class="alert alert-danger">
+              Por favor, preencha o campo cep!
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="numero">Número: </label>
+          <input type="text" class="form-control" name="numero"
+          ng-model="endereco.numero" placeholder="Número" ng-required="true" ng-minlength="1">
+
+          <div ng-messages="formendereco.numero.$error" ng-if='formendereco.numero.$dirty'>
+            <div ng-message="required" class="alert alert-danger">
+              Por favor, preencha o campo número!
+            </div>
+          </div>
+        </div>
+        <input type= 'reset' name='limpar' value= 'Limpar' class="btn btn-secondary btn-lg btn-block">
+            <button ng-click="cadastrar()" class="btn btn-dark btn-lg btn-block">Cadastrar</button>
+      </form>
